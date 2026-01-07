@@ -23,5 +23,12 @@ Replace: The path to your folder
 
 This should update all file paths automatically. Alternatively manually update the 15 locations.
 
+<img width="1308" height="753" alt="update_file_paths drawio" src="https://github.com/user-attachments/assets/1b444aed-3f8f-42bc-b73e-510fbeb33f0c" />
 
+After updating the file paths run ‘0_Create_and_Populate_Database.sql’ in the ‘PSQL Tool’. To do this right click the database name and select ‘PSQL Tool’. Check that the path is correct the database name should appear at the end of the command window followed by ‘=#’. Run the following two lines of code update with the path to where you saved the updated ‘0_Create_and_Populate_Database.sql’.
+
+<img width="605" height="231" alt="DB_3_open_scratchpad" src="https://github.com/user-attachments/assets/ca2277cb-a3b0-44de-96b6-07b8937b0eea" />
+
+\cd ‘Path to the folder with 0_Create_and_Populate_Database.sql '
+\i 0_Create_and_Populate_Database.sql
 
