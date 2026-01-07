@@ -3,8 +3,6 @@ import sys
 import os
 
 import psycopg2
-import matplotlib.pyplot as plt
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
