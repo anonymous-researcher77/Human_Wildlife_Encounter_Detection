@@ -12,4 +12,6 @@ The following prompt will appear where you must give the data base a name. Here 
 
 <img width="605" height="451" alt="DB_2_create_db_2" src="https://github.com/user-attachments/assets/0cabb8c6-9016-419e-b6cc-917fe559797b" />
 
+0_Create_and_Populate_Database.sql
+
 
