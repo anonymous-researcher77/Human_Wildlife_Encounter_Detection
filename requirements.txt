@@ -1,0 +1,9 @@
+matplotlib
+progressbar2
+requests
+shapely
+psycopg2
+rasterio
+matplotlib_scalebar
+ortega
+contextily
