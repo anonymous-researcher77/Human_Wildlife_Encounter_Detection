@@ -15,6 +15,7 @@ The following prompt will appear where you must give the data base a name. Here 
 Next download the data by going to the OSF link included in the paper submission under Data and Software Availability. Download the files as a zip and extract the folder. 
 
 Download ‘0_Create_and_Populate_Database.sql’ file from this github project and update the file paths to the location you extracted the data. This can be easily done in a a text editor with find and replace.
+
 Find : ‘ADD PATH TO DATA FILES => ’
 Replace: The path to your folder 
 
