@@ -91,6 +91,22 @@ The total expected run tile is ____
 
 # Run Intervisibility
 
+The file '2_Intervisibility.py' must be run in a QGIS environment. To do this open QGIS and select the 'python consol' using the icon in the image below or by using 'ctrl + alt + p'.
+
+<img width="1922" height="1005" alt="QGIS_1" src="https://github.com/user-attachments/assets/4047096a-ef58-4817-8bc9-221db96d4842" />
+
+Open the '2_Intervisibility.py' file using the 'open script...' icon shown below
+
+<img width="1915" height="1027" alt="QGIS_2" src="https://github.com/user-attachments/assets/422ad702-1aad-47eb-af09-55793a6327d4" />
+
+After opening the file the path to the dem must be updated and then to run the file set run all to true or uncomment one of the predefind sets of variables. QGIS is not stable while running such a large calculation and may freeze during the run. I have found that uncommenting and running the intervisibilety check one at a time is more stable.
+
+<img width="1919" height="1029" alt="QGIS_3" src="https://github.com/user-attachments/assets/d9882811-a017-4695-9426-249d1ef7c5f9" />
+
+After selecting a method click the green arrow to run the code.
+
+<img width="1907" height="1028" alt="QGIS_4" src="https://github.com/user-attachments/assets/7bcc65e4-d6ac-4cf9-9a78-802a433d0738" />
+
 # Create Encounters
 
 # Run Figures
