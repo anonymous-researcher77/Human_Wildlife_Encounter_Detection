@@ -1,10 +1,10 @@
 # Human_Wildlife_Encounter_Detection
-This repository contains the code, and scripts necessary to reproduce the analyses and figures presented in 'A New Spatio-Temporal Method for Detecting Human-Wildlife Encounters from GNSS Trajectories' submitted to Agile.
+This repository contains the code and scripts necessary to reproduce the analyses and figures presented in 'A New Spatio-Temporal Method for Detecting Human-Wildlife Encounters from GNSS Trajectories' submitted to Agile.
 
 The first step is to download and extract the files included in this github project.
 
 # Restore Database
-This section provides a step by step prosses to restore the database using PGadmin4. You can install PGadmin4 or use your prefeared SQL method though the step by step gide is done using PGadmin4. When opening Pgadmin4 you may receive a password prompt for a password set during the installation. 
+This section provides a step by step process to restore the database using PGadmin4. You can install PGadmin4 or use your prefeared SQL method though the step by step gide is done using PGadmin4. When opening Pgadmin4 you may receive a password prompt for a password set during the installation. 
 
 The first step is to create a new database by right clicking database tab, hover over 'create' and select 'database'.
 
