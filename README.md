@@ -52,6 +52,17 @@ In Visual Studio Code open the folder containing the project
 Using 'ctrl + shift + p' then select interpreter and select you python instelation. See image below.
 
 
+<img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/d36c9456-5d20-413f-8517-b6e21a2e3196" />
+
+<img width="1923" height="491" alt="image" src="https://github.com/user-attachments/assets/58a27b81-12ff-4dbf-bfeb-ec6ce0e0a01d" />
+
+Then using 'ctrl + shift + p' then select 'Python: Create Environment...' followed by 'Venu' followed by ''
+
+<img width="1927" height="527" alt="image" src="https://github.com/user-attachments/assets/a56473d0-cc6e-421d-ad64-5a0b98eacccd" />
+
+<img width="1919" height="485" alt="image" src="https://github.com/user-attachments/assets/f6540315-4566-4351-bd20-c17f83dd231a" />
+
+<img width="1918" height="383" alt="image" src="https://github.com/user-attachments/assets/85b76a9c-2b06-4c1b-9c74-e96b674e1df3" />
 
 
 
