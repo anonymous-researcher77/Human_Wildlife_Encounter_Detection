@@ -31,6 +31,8 @@ After updating the file paths run ‘0_Create_and_Populate_Database.sql’ in th
 
 <img width="1915" height="1002" alt="DB_3_open_scratchpad_2" src="https://github.com/user-attachments/assets/f29ff201-28c7-4565-b630-afdf66eeb91f" />
 
+<img width="1905" height="1002" alt="DB____55" src="https://github.com/user-attachments/assets/17db4640-7c1d-46d6-9cb5-c367b7760b57" />
+
 \cd ‘Path to the folder with 0_Create_and_Populate_Database.sql '
 
 \i 0_Create_and_Populate_Database.sql
