@@ -76,6 +76,19 @@ Finally Tracklib is not able to be installed using pip so you must download and 
 
 # Create Encounter Events
 
+Next to create the encounter events tables in the database you must edite acouple lines in the '1_main_Create_Encounter_Events.py' file. The tracklib_folder_path variable must be replaced with the path where you extracted tracklib and the 'db' must be the database name, 'db_user' is the name of the user of the database and 'db_password' must be the pasword to the database if they differ from the 'ResRoute' or the defaults of 'postgres' and 'postgres'.   
+
+Then if you click 'Run Below' it will create the Encounter Events tables for each set of variables used in the paper. 
+
+<img width="1922" height="1008" alt="encounter_events_111" src="https://github.com/user-attachments/assets/c8fc38ff-a4a7-4b5a-b98c-3dc792b4840b" />
+
+The total expected run tile is ____
++ Default: Create Encounter Events  
++ HDA = 500: Create Encounter Events
++ d_gap_a = 999999999: Create Encounter Events
++ d_gap_h = 999999999: Create Encounter Events
+
+
 # Run Intervisibility
 
 # Create Encounters
