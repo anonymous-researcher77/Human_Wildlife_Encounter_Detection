@@ -41,7 +41,7 @@ The expected runtime is about
 
 The final output will look like this.
 
-# Create python environment
+# Create a python environment
 
 Here I will use Visual Studio Code and Jupyter Notebook.
 
@@ -49,7 +49,7 @@ The first step is to create a virtual environment.
 
 In Visual Studio Code, open the folder containing the project.
 
-Use 'ctrl + shift + p' then select 'Interpreter' and select your python installation. See image below.
+Use 'ctrl + shift + p' then select 'Interpreter' and select your python installation. See images below.
 
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/d36c9456-5d20-413f-8517-b6e21a2e3196" />
@@ -68,21 +68,24 @@ Followed by this, you must install the required libraries. Open the terminal usi
 
 <img width="1916" height="1009" alt="the_requirments" src="https://github.com/user-attachments/assets/ce881440-2ba7-4499-8ebd-71b94fed1e8c" />
 
-The next step is run in python and needs to have files arranged properly. Download the 
-
 <img width="1920" height="877" alt="install_requirments" src="https://github.com/user-attachments/assets/e8dc494e-18d6-450f-878e-b1c912bcd3a1" />
 
-Finally Tracklib is not able to be installed using pip so you must download and extract Tracklib from the following link https://github.com/umrlastig/tracklib.
+Finally Tracklib is not able to be installed using pip, so you must download and extract Tracklib from the following link https://github.com/umrlastig/tracklib.
 
 # Create Encounter Events
 
-Next to create the encounter events tables in the database you must edite acouple lines in the '1_main_Create_Encounter_Events.py' file. The tracklib_folder_path variable must be replaced with the path where you extracted tracklib and the 'db' must be the database name, 'db_user' is the name of the user of the database and 'db_password' must be the pasword to the database if they differ from the 'ResRoute' or the defaults of 'postgres' and 'postgres'.   
+Next, to create the encounter events tables in the database, you must edit a couple of lines in the '1_main_Create_Encounter_Events.py' file. The tracklib_folder_path variable must be replaced with the path where you extracted tracklib. If your database does not use the preset values listed here you must update the variables to match your database.
 
-Then if you click 'Run Below' it will create the Encounter Events tables for each set of variables used in the paper. 
+- 'db' is the name of the database
+- 'db_user' is the name of the user of the database
+- 'db_password' must be the pasword to the database
+
+
+Then if you click 'Run Below', it will create the Encounter Events tables for each set of variables used in the paper. 
 
 <img width="1922" height="1008" alt="encounter_events_111" src="https://github.com/user-attachments/assets/c8fc38ff-a4a7-4b5a-b98c-3dc792b4840b" />
 
-The total expected run tile is ____
+The total expected run time is ____
 + Default: Create Encounter Events  
 + HDA = 500: Create Encounter Events
 + d_gap_a = 999999999: Create Encounter Events
@@ -91,7 +94,7 @@ The total expected run tile is ____
 
 # Run Intervisibility
 
-The file '2_Intervisibility.py' must be run in a QGIS environment. To do this open QGIS and select the 'python consol' using the icon in the image below or by using 'ctrl + alt + p'.
+The file '2_Intervisibility.py' must be run in a QGIS environment. To do this, open QGIS and select the 'python console' using the icon in the image below or by using 'ctrl + alt + p'.
 
 <img width="1922" height="1005" alt="QGIS_1" src="https://github.com/user-attachments/assets/4047096a-ef58-4817-8bc9-221db96d4842" />
 
@@ -99,11 +102,12 @@ Open the '2_Intervisibility.py' file using the 'open script...' icon shown below
 
 <img width="1915" height="1027" alt="QGIS_2" src="https://github.com/user-attachments/assets/422ad702-1aad-47eb-af09-55793a6327d4" />
 
-After opening the file the path to the dem must be updated and then to run the file set run all to true or uncomment one of the predefind sets of variables. QGIS is not stable while running such a large calculation and may freeze during the run. I have found that uncommenting and running the intervisibilety check one at a time is more stable.
-
 <img width="1919" height="1029" alt="QGIS_3" src="https://github.com/user-attachments/assets/d9882811-a017-4695-9426-249d1ef7c5f9" />
 
-After selecting a method click the green arrow to run the code.
+After opening the file, the path to the dem must be updated and then, to run the file, set run all to true or uncomment one of the predefined sets of variables. QGIS is not stable while running such a large calculation and may freeze during the run. I have found that uncommenting and running the intervisibility check one at a time is more stable.
+
+
+After selecting a method, click on the green arrow to run the code.
 
 <img width="1907" height="1028" alt="QGIS_4" src="https://github.com/user-attachments/assets/7bcc65e4-d6ac-4cf9-9a78-802a433d0738" />
 
