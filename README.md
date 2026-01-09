@@ -68,10 +68,12 @@ Followed by this you must install the required libraries. open the terminal usin
 
 <img width="1916" height="1009" alt="the_requirments" src="https://github.com/user-attachments/assets/ce881440-2ba7-4499-8ebd-71b94fed1e8c" />
 
+The next step is run in python and needs to have files arranged properly. Download the 
+
+<img width="1920" height="877" alt="install_requirments" src="https://github.com/user-attachments/assets/e8dc494e-18d6-450f-878e-b1c912bcd3a1" />
 
 # Create Encounter Events
 
-The next step is run in python and needs to have files arranged properly. Download the 
 # Run Intervisibility
 
 # Create Encounters
