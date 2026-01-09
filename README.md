@@ -72,6 +72,8 @@ The next step is run in python and needs to have files arranged properly. Downlo
 
 <img width="1920" height="877" alt="install_requirments" src="https://github.com/user-attachments/assets/e8dc494e-18d6-450f-878e-b1c912bcd3a1" />
 
+Finally Tracklib is not able to be installed using pip so you must download and extract Tracklib from the following link https://github.com/umrlastig/tracklib.
+
 # Create Encounter Events
 
 # Run Intervisibility
