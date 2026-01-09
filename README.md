@@ -17,6 +17,7 @@ Next download the data by going to the OSF link included in the paper submission
 Download ‘0_Create_and_Populate_Database.sql’ file from this github project and update the file paths to the location you extracted the data. This can be easily done in a a text editor with find and replace.
 
 Find : ‘ADD PATH TO DATA FILES => ’
+
 Replace: The path to your folder 
 
 <img width="1325" height="697" alt="download_data_arrow" src="https://github.com/user-attachments/assets/05bc0bc1-2e4b-47f6-867f-72cafb7b8a2c" />
