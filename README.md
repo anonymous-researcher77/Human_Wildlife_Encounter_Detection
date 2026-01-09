@@ -56,7 +56,7 @@ Using 'ctrl + shift + p' then select interpreter and select you python instelati
 
 <img width="1923" height="491" alt="image" src="https://github.com/user-attachments/assets/58a27b81-12ff-4dbf-bfeb-ec6ce0e0a01d" />
 
-Then using 'ctrl + shift + p' then select 'Python: Create Environment...' followed by 'Venu' followed by ''
+Then using 'ctrl + shift + p' then select 'Python: Create Environment...' followed by 'Venu' followed by 'Python #.#.#'
 
 <img width="1927" height="527" alt="image" src="https://github.com/user-attachments/assets/a56473d0-cc6e-421d-ad64-5a0b98eacccd" />
 
@@ -64,6 +64,9 @@ Then using 'ctrl + shift + p' then select 'Python: Create Environment...' follow
 
 <img width="1918" height="383" alt="image" src="https://github.com/user-attachments/assets/85b76a9c-2b06-4c1b-9c74-e96b674e1df3" />
 
+Followed by this you must install the required libraries. open the terminal using 'ctrl + shift + ù' and pip install the all libraries in the requirments file.
+
+<img width="1916" height="1009" alt="the_requirments" src="https://github.com/user-attachments/assets/ce881440-2ba7-4499-8ebd-71b94fed1e8c" />
 
 
 # Create Encounter Events
