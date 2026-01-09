@@ -28,13 +28,14 @@ This should update all file paths automatically. Alternatively manually update t
 
 <img width="1308" height="753" alt="update_file_paths drawio" src="https://github.com/user-attachments/assets/1b444aed-3f8f-42bc-b73e-510fbeb33f0c" />
 
-After updating the file paths run ‘0_Create_and_Populate_Database.sql’ in the ‘PSQL Tool’. To do this right click the database name and select ‘PSQL Tool’. Check that the path is correct the database name should appear at the end of the command window followed by ‘=#’. Run the following two lines of code update with the path to where you saved the updated ‘0_Create_and_Populate_Database.sql’.
+After updating the file paths, run ‘0_Create_and_Populate_Database.sql’ in the ‘PSQL Tool’. To do this, right click the database name and select ‘PSQL Tool’. Check that the path is correct. The database name should appear at the end of the command window followed by ‘=#’. Run the following line of code update with the path to where you saved the updated ‘0_Create_and_Populate_Database.sql’.
+
+\i PATH/TO/FILE/0_Create_and_Populate_Database.sql
 
 <img width="1915" height="1002" alt="DB_3_open_scratchpad_2" src="https://github.com/user-attachments/assets/f29ff201-28c7-4565-b630-afdf66eeb91f" />
 
 <img width="1905" height="1002" alt="DB____55" src="https://github.com/user-attachments/assets/17db4640-7c1d-46d6-9cb5-c367b7760b57" />
 
-\i PATH/TO/FILE/0_Create_and_Populate_Database.sql
 
 The expected runtime is about 
 
@@ -42,20 +43,20 @@ The final output will look like this.
 
 # Create python environment
 
-Here I will use Visual Studio Code and jupiter note books.
+Here I will use Visual Studio Code and Jupyter Notebook.
 
-The first step is to create a vertual environment to do this in the folder that you downloaded the github project.
+The first step is to create a virtual environment. 
 
-In Visual Studio Code open the folder containing the project
+In Visual Studio Code, open the folder containing the project.
 
-Using 'ctrl + shift + p' then select interpreter and select you python instelation. See image below.
+Use 'ctrl + shift + p' then select 'Interpreter' and select your python installation. See image below.
 
 
 <img width="1920" height="1008" alt="image" src="https://github.com/user-attachments/assets/d36c9456-5d20-413f-8517-b6e21a2e3196" />
 
 <img width="1923" height="491" alt="image" src="https://github.com/user-attachments/assets/58a27b81-12ff-4dbf-bfeb-ec6ce0e0a01d" />
 
-Then using 'ctrl + shift + p' then select 'Python: Create Environment...' followed by 'Venu' followed by 'Python #.#.#'
+Then use 'ctrl + shift + p' to select 'Python: Create Environment...' followed by 'Venu' followed by 'Python #.#.#'
 
 <img width="1927" height="527" alt="image" src="https://github.com/user-attachments/assets/a56473d0-cc6e-421d-ad64-5a0b98eacccd" />
 
@@ -63,7 +64,7 @@ Then using 'ctrl + shift + p' then select 'Python: Create Environment...' follow
 
 <img width="1918" height="383" alt="image" src="https://github.com/user-attachments/assets/85b76a9c-2b06-4c1b-9c74-e96b674e1df3" />
 
-Followed by this you must install the required libraries. open the terminal using 'ctrl + shift + ù' and pip install the all libraries in the requirments file.
+Followed by this, you must install the required libraries. Open the terminal using 'ctrl + shift + ù' and pip install all the libraries in the 'requirements' file.
 
 <img width="1916" height="1009" alt="the_requirments" src="https://github.com/user-attachments/assets/ce881440-2ba7-4499-8ebd-71b94fed1e8c" />
 
