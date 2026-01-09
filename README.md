@@ -1,8 +1,10 @@
 # Human_Wildlife_Encounter_Detection
 This repository contains the code, and scripts necessary to reproduce the analyses and figures presented in 'A New Spatio-Temporal Method for Detecting Human-Wildlife Encounters from GNSS Trajectories' submitted to Agile.
 
+The first step is to download and extract the files included in this github project.
+
 # Restore Database
-This section provides a step by step prosses to restore the database using PGadmin4. After installing PGadmin4. When opening Pgadmin4 you may receive a password prompt for a password set during the installation. 
+This section provides a step by step prosses to restore the database using PGadmin4. You can install PGadmin4 or use your prefeared SQL method though the step by step gide is done using PGadmin4. When opening Pgadmin4 you may receive a password prompt for a password set during the installation. 
 
 The first step is to create a new database by right clicking database tab, hover over 'create' and select 'database'.
 
@@ -14,11 +16,11 @@ The following prompt will appear where you must give the data base a name. Here 
 
 Next download the data by going to the OSF link included in the paper submission under Data and Software Availability. Download the files as a zip and extract the folder. 
 
-Download ‘0_Create_and_Populate_Database.sql’ file from this github project and update the file paths to the location you extracted the data. This can be easily done in a a text editor with find and replace.
+Download ‘0_Create_and_Populate_Database.sql’ file from this github project if not already done and update the file paths in ‘0_Create_and_Populate_Database.sql’ to the location you extracted the data. This can be easily done in a a text editor with find and replace.
 
 Find : ‘ADD PATH TO DATA FILES => ’
 
-Replace: The path to your folder 
+Replace: The path to your folder containing the data 
 
 <img width="1325" height="697" alt="download_data_arrow" src="https://github.com/user-attachments/assets/05bc0bc1-2e4b-47f6-867f-72cafb7b8a2c" />
 
@@ -39,11 +41,23 @@ The expected runtime is about
 
 The final output will look like this.
 
+# Create python environment
+
+Here I will use Visual Studio Code and jupiter note books.
+
+The first step is to create a vertual environment to do this in the folder that you downloaded the github project.
+
+In Visual Studio Code open the folder containing the project
+
+Using 'ctrl + shift + p' then select interpreter and select you python instelation. See image below.
+
+
+
+
 
 # Create Encounter Events
 
-Next is to update the python code
-
+The next step is run in python and needs to have files arranged properly. Download the 
 # Run Intervisibility
 
 # Create Encounters
