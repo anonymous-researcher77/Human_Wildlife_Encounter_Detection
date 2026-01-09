@@ -35,3 +35,21 @@ After updating the file paths run ‘0_Create_and_Populate_Database.sql’ in th
 
 \i PATH/TO/FILE/0_Create_and_Populate_Database.sql
 
+The expected runtime is about 
+
+The final output will look like this.
+
+
+# Create Encounter Events
+
+Next is to update the python code
+
+# Run Intervisibility
+
+# Create Encounters
+
+# Run Figures
+
+# Run Tables
+
+
