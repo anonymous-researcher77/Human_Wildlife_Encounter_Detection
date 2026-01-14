@@ -226,6 +226,6 @@ This file requires the following to be update
 
 **Table_8_trajectories_seasons.py**
 
-db          =  'ResRoute'
-db_user     =  'postgres'
-db_password =  'postgres'
+- db          =  'ResRoute'
+- db_user     =  'postgres'
+- db_password =  'postgres'
