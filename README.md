@@ -147,17 +147,41 @@ Expected total run time is ____
 After creating the enounter tables to recreate the results from tha paper figures can be created by running the various figure python folders. Only figures that include results or data are included here. Diagram figures that do not use data are not included.
 
 - Figure_8_data_map.py
+
 This file only requires that the databas path is accurate i.e. the following are accurate
     db = 'ResRoute'
     db_connection_url =
 - Figure_9_Depiction_of_ECA.py
+
 This file only requires that the databas path is accurate i.e. the following are accurate
     db = 'ResRoute'
     db_connection_url =
+    
 - Figure_10_histogram_by_distance.py
+
+This file only requires that the databas path is accurate i.e. the following are accurate
+    db = 'ResRoute'
+    db_connection_url =
+  
 - Figure_11_histogram_by_time_of_day.py
+
+This file requires that the following are updated
+    file path to tracklib
+    db = 'ResRoute'
+    db_connection_url =
+
 - Figure_12_kernel_density_estimate.py
+
+This file requires that the following are updated if they do not match the defaults
+    db = 'ResRoute'
+    db_user = 'postgres'
+  
 - Figure_13_seasons_heatmap.py
+
+This file requires the following to be update
+folder_path =        r"ADD PATH TO TRACKLIB FOLDER"
+db_connection_url   = "postgresql://postgres:postgres@localhost:5432/ResRoute"
+elevation_path      = 'ADD PATH TO ELEVATION FILE => /bouge_elev.tif'
   
 # Run Tables
 
