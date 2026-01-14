@@ -58,7 +58,8 @@ Use 'ctrl + shift + p' then select 'Interpreter' and select your python installa
 
 Then use 'ctrl + shift + p' to select 'Python: Create Environment...' followed by 'Venu' followed by 'Python #.#.#'
 
-<img width="1927" height="527" alt="image" src="https://github.com/user-attachments/assets/a56473d0-cc6e-421d-ad64-5a0b98eacccd" />
+<img width="1867" height="837" alt="hide_identity_nom drawio" src="https://github.com/user-attachments/assets/85216393-20b1-43a9-94fd-efd6d1d4fad7" />
+
 
 <img width="1919" height="485" alt="image" src="https://github.com/user-attachments/assets/f6540315-4566-4351-bd20-c17f83dd231a" />
 
