@@ -113,6 +113,34 @@ After selecting a method, click on the green arrow to run the code.
 
 # Create Encounters
 
+After Intervisibility has been added for all encounter events tables encounters can be calaulated by using the '3_main_Create_Encounters.py' file. '3_main_Create_Encounters.py' has the same 4 lines as '1_main_Create_Encounter_Events.py'.
+
+- tracklib_folder_path must be set to the path to where tracklib is loaded
+- 'db' is the name of the database
+- 'db_user' is the name of the user of the database
+- 'db_password' must be the pasword to the database
+  
+<img width="1860" height="901" alt="enounters___" src="https://github.com/user-attachments/assets/3bae29d7-bdb5-453c-987b-17bc2665ed23" />
+
+After updating the required lines the click 'run below' at the top cell this will exiquet all cells createing encounter events of all settings used in the paper.
+
+Expected total run time is ____
+- default settings
+- HDA = 500
+- d_gap_h = None
+- d_gap_a = None
+- t_gap = 2 min
+- t_gap = 4 min
+- t_gap = 16 min
+- t_gap = 2 hours
+- t_gap = 4 hours
+- t_gap = 24 hours
+- height_chamois = 0.8 m
+- height_chamois = 1.2 m
+- height_human = 2 m
+- Ignoring intervisibility
+- Ignoring intervisibility hda = 500
+
 # Run Figures
 
 # Run Tables
