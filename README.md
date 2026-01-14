@@ -144,6 +144,21 @@ Expected total run time is ____
 
 # Run Figures
 
+After creating the enounter tables to recreate the results from tha paper figures can be created by running the various figure python folders. Only figures that include results or data are included here. Diagram figures that do not use data are not included.
+
+- Figure_8_data_map.py
+This file only requires that the databas path is accurate i.e. the following are accurate
+    db = 'ResRoute'
+    db_connection_url =
+- Figure_9_Depiction_of_ECA.py
+This file only requires that the databas path is accurate i.e. the following are accurate
+    db = 'ResRoute'
+    db_connection_url =
+- Figure_10_histogram_by_distance.py
+- Figure_11_histogram_by_time_of_day.py
+- Figure_12_kernel_density_estimate.py
+- Figure_13_seasons_heatmap.py
+  
 # Run Tables
 
 
