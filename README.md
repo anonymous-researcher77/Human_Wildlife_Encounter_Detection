@@ -187,30 +187,35 @@ This file requires the following to be update
 # Run Tables
 
 **Table_2_chamois_data.py**
+
 This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 - db_password =  'postgres'
 
 **Table_3_human_data.py**
+
 This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 - db_password =  'postgres'
 
 **Table_5_HDA_radius_and_Intervisibility.py**
+
 This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 - db_password =  'postgres'
 
 **Table_6_parameters.py**
+
 This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 - db_password =  'postgres'
 
 **Table_7_ORTEGA.py**
+
 This file runs many instances of the ortaga library for comparison but forces ortegra to run one at a time severly affecting its optomization as such crateding this table saves files as chackpoints to not need to be run from scratch again if it needs to be rerun. It also has a segnificant run time.
 
 If the csv of the Ortega results are already created to only rerun the table run only the first and last cells.
@@ -220,6 +225,7 @@ This file requires the following to be update
 - db_user     =  'postgres'
 
 **Table_8_trajectories_seasons.py**
+
 db          =  'ResRoute'
 db_user     =  'postgres'
 db_password =  'postgres'
