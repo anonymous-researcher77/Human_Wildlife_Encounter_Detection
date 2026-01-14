@@ -81,7 +81,7 @@ Next, to create the encounter events tables in the database, you must edit a cou
 
 - 'db' is the name of the database
 - 'db_user' is the name of the user of the database
-- 'db_password' must be the pasword to the database
+- 'db_password' must be the password to the database
 
 
 Then if you click 'Run Below', it will create the Encounter Events tables for each set of variables used in the paper. 
@@ -116,16 +116,16 @@ After selecting a method, click on the green arrow to run the code.
 
 # Create Encounters
 
-After Intervisibility has been added for all encounter events tables encounters can be calaulated by using the '3_main_Create_Encounters.py' file. '3_main_Create_Encounters.py' has the same 4 lines as '1_main_Create_Encounter_Events.py'.
+After Intervisibility has been added for all encounter events tables encounters can be calculated by using the '3_main_Create_Encounters.py' file. '3_main_Create_Encounters.py' has the same 4 lines as '1_main_Create_Encounter_Events.py'.
 
 - tracklib_folder_path must be set to the path to where tracklib is loaded
 - 'db' is the name of the database
 - 'db_user' is the name of the user of the database
-- 'db_password' must be the pasword to the database
+- 'db_password' must be the password to the database
   
 <img width="1860" height="901" alt="enounters___" src="https://github.com/user-attachments/assets/3bae29d7-bdb5-453c-987b-17bc2665ed23" />
 
-After updating the required lines the click 'run below' at the top cell this will exiquet all cells createing encounter events of all settings used in the paper.
+After updating the required lines the click 'run below' at the top cell this will execute all cells creating encounter events of all settings used in the paper.
 
 Expected total run time is ____
 - default settings
@@ -146,23 +146,23 @@ Expected total run time is ____
 
 # Run Figures
 
-After creating the enounter tables to recreate the results from tha paper figures can be created by running the various figure python folders. Only figures that include results or data are included here. Diagram figures that do not use data are not included.
+After creating the encounter tables to recreate the results from the paper figures can be created by running the various figure python folders. Only figures that include results or data are included here. Diagram figures that do not use data are not included.
 
 **Figure_8_data_map.py**
 
-This file only requires that the databas path is accurate i.e. the following are accurate
+This file only requires that the database path is accurate i.e. the following are accurate
 - db = 'ResRoute'
 - db_connection_url =
     
 **Figure_9_Depiction_of_ECA.py**
 
-This file only requires that the databas path is accurate i.e. the following are accurate
+This file only requires that the database path is accurate i.e. the following are accurate
 - db = 'ResRoute'
 - db_connection_url =
     
 **Figure_10_histogram_by_distance.py**
 
-This file only requires that the databas path is accurate i.e. the following are accurate
+This file only requires that the database path is accurate i.e. the following are accurate
 - db = 'ResRoute'
 - db_connection_url =
   
@@ -218,9 +218,9 @@ This file requires the following to be update
 
 **Table_7_ORTEGA.py**
 
-This file runs many instances of the ortaga library for comparison but forces ortegra to run one at a time severly affecting its optomization as such crateding this table saves files as chackpoints to not need to be run from scratch again if it needs to be rerun. It also has a segnificant run time.
+This file runs many instances of the Ortega library for comparison but forces Ortega to run pair of trajectories at a time severely affecting its optimization. To save time in recreating the table after the first run checkpoints are saved. It also has a significant run time.
 
-If the csv of the Ortega results are already created to only rerun the table run only the first and last cells.
+If the csv of the Ortega results is already created to only rerun the table only run the first and last cells.
 
 This file requires the following to be update
 - db          =  'ResRoute'
