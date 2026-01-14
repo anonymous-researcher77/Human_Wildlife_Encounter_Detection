@@ -13,6 +13,8 @@ import my_utils_plotting
 
 
 db      = 'ResRoute'
+db_connection_url = "postgresql://postgres:postgres@localhost:5432/"+db
+
 head    = 'exp__'
 end     = '_default'
 when 	= 'all'
@@ -30,7 +32,8 @@ dbs1 = my_utils_plotting.querry_enc_fig_9(spotting_table,
                   season = season, 
                   r_p = r_p,
                   vis = True,
-                  db = db)
+                  db = db,
+                db_connection_url = db_connection_url)
 
 dbs2 = my_utils_plotting.querry_enc_fig_9(spotting_table,
                  encounter_table,
@@ -39,7 +42,8 @@ dbs2 = my_utils_plotting.querry_enc_fig_9(spotting_table,
                   r_p = r_p,
                   id_column = 'id_encounter_ignore_vis',
                   vis = False,
-                  db = db)
+                  db = db,
+                  db_connection_url = db_connection_url)
 
 fig, ax = plt.subplots(figsize=(10, 10))
 
