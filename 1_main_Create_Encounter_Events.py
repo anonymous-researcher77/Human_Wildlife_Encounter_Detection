@@ -4,14 +4,14 @@
 import sys
 import os
 
-folder_path = '!! ADD FILE PATH HERE !!'
+tracklib_folder_path = '!! ADD FILE PATH HERE !!'
 db          = 'ResRoute'
 db_user     = 'postgres'
 db_password = 'postgres'
 
 
-if folder_path not in sys.path:
-    sys.path.insert(0, folder_path)
+if tracklib_folder_path not in sys.path:
+    sys.path.insert(0, tracklib_folder_path)
     
 import time 
 from tracklib.core.obs_time import ObsTime
