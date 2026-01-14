@@ -3,8 +3,8 @@
 from sqlalchemy import create_engine  , text
 import geopandas as gpd
 
-def querry_ppa_indiv(source_table_events, source_table_encounters, source_table_ppa, vis = None, source_table_traj = [], time ='all', time_style = 'DD2', season='all', r_p = 'all', group_by = 'traj_human, indiv_animal' , db=[]): 
-    db_connection_url = "postgresql://postgres:postgres@localhost:5432/"+db
+def querry_ppa_indiv(source_table_events, source_table_encounters, source_table_ppa, vis = None, source_table_traj = [], time ='all', time_style = 'DD2', season='all', r_p = 'all', group_by = 'traj_human, indiv_animal' , db=[], db_connection_url=None): 
+
     con = create_engine(db_connection_url)
     
     if time_style == 'DD2':
@@ -224,8 +224,8 @@ def querry_enc(source_table_events, source_table_encounters, vis_column = 'vis_g
     ecs = gpd.GeoDataFrame.from_postgis(ecs, con)
     return ecs
 
-def querry_enc_fig_9(source_table_events, source_table_encounters, vis = True,  vis_column = 'vis_grid', id_column = 'id_encounter', source_table_traj = [], time ='all', season='all', r_p = 'all',  db=[]): 
-    db_connection_url = "postgresql://postgres:postgres@localhost:5432/"+db
+def querry_enc_fig_9(source_table_events, source_table_encounters, vis = True,  vis_column = 'vis_grid', id_column = 'id_encounter', source_table_traj = [], time ='all', season='all', r_p = 'all',  db=[], db_connection_url=None): 
+
     con = create_engine(db_connection_url)
     
     if time == 'all':
