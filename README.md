@@ -71,7 +71,9 @@ Followed by this, you must install the required libraries. Open the terminal usi
 
 <img width="1920" height="877" alt="install_requirments" src="https://github.com/user-attachments/assets/e8dc494e-18d6-450f-878e-b1c912bcd3a1" />
 
-Finally Tracklib is not able to be installed using pip, so you must download and extract Tracklib from the following link https://github.com/umrlastig/tracklib.
+Tracklib is not able to be installed using pip, so you must download and extract Tracklib from the following link https://github.com/umrlastig/tracklib.
+
+Finally the file 'my_utils.py' must be updated. the variable folder_path = r"ADD PATH TO TRACKLIB FOLDER e.x. => \tracklib" must be updated to the path where Tracklib has been extracted.
 
 # Create Encounter Events
 
