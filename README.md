@@ -37,7 +37,7 @@ After updating the file paths, run ‘0_Create_and_Populate_Database.sql’ in t
 <img width="1905" height="1002" alt="DB____55" src="https://github.com/user-attachments/assets/17db4640-7c1d-46d6-9cb5-c367b7760b57" />
 
 
-The expected runtime is about 
+The expected runtime is about 4.7 min
 
 The final output will look like this.
 
