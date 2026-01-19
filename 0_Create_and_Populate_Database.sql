@@ -88,13 +88,12 @@ CREATE TABLE bauges_import (  id    INTEGER,  geom_wkt    TEXT, limite_res  TEXT
 CREATE TABLE bauges(  id    INTEGER,  geom    geometry, limite_res  TEXT);
 INSERT INTO bauges (id, geom, limite_res) SELECT  id,  ST_GeomFromText(geom_wkt, 2056), limite_res FROM bauges_import;
 DROP TABLE bauges_import;
----------------------------------
+
 
 CREATE TABLE france_import (id INTEGER, geom_wkt TEXT, fid bigint);
 CREATE TABLE france (id INTEGER, geom geometry, fid bigint);
 
 \COPY france_import FROM 'ADD PATH TO DATA FILES => /france.csv' WITH (   FORMAT CSV,   HEADER TRUE,   DELIMITER ',',   QUOTE '"',   ESCAPE '"' );
-
 
 SELECT COUNT(*) FROM france_import;
 
