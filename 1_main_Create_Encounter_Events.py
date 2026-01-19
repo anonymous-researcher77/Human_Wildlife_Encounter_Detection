@@ -47,7 +47,7 @@ bbox = [x_min,x_max,y_min,y_max]
 # %% Default: Create Encounter Events  
 # Default: Create Encounter  Events  
 
-my_utils.Encounter_events(
+my_utils.encounter_events(
         bbox,
         head,
         tail,
