@@ -89,7 +89,7 @@ Then if you click 'Run Below', it will create the Encounter Events tables for ea
 <img width="1922" height="1008" alt="encounter_events_111" src="https://github.com/user-attachments/assets/c8fc38ff-a4a7-4b5a-b98c-3dc792b4840b" />
 
 The total expected run time is ____
-+ Default: Create Encounter Events  
++ Default: Create Encounter Events --- 50 min
 + HDA = 500: Create Encounter Events
 + d_gap_a = 999999999: Create Encounter Events
 + d_gap_h = 999999999: Create Encounter Events
