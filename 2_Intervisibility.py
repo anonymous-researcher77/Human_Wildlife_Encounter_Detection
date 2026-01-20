@@ -118,7 +118,7 @@ def  pairs2 (obs,targets):
         if id1 == id2:
             obs.pt[pt1]["targets"][pt2]=value
         else:
-            print('Ids in pairing do not match')
+            #print('Ids in pairing do not match')
             break
         x,y = obs.pt[pt1]["pix_coord"]
         x2, y2 = value["pix_coord"]
@@ -143,7 +143,7 @@ def pairs2(obs, targets):
         if id1 == id2:
             obs.pt[pt1]["targets"][pt2] = value
         else:
-            print("Ids in pairing do not match")
+            #print("Ids in pairing do not match")
             break
 
         x, y = obs.pt[pt1]["pix_coord"]
@@ -185,7 +185,7 @@ def pairs (obs,targets):
                 obs.pt[pt1]["targets"][pt2]=value
 
 def processAlgorithm_pairs(self, parameters, context, feedback):
-    print('Correct Vis')
+    #print('Correct Vis')
     raster = self.parameterAsRasterLayer(parameters,self.DEM, context)
     observers = self.parameterAsSource(parameters,self.OBSERVER_POINTS,context)
     targets = self.parameterAsSource(parameters,self.TARGET_POINTS,context)
@@ -241,7 +241,7 @@ def processAlgorithm_pairs(self, parameters, context, feedback):
                         
     feedback.setProgressText("*1* Constructing the network")
     
-    print('The network is just pairs')
+    #print('The network is just pairs')
     pairs(o,t)
    
     dem.set_master_window(o.max_radius,
@@ -362,11 +362,11 @@ def run_intervisibility_in_batches( layerA,
         batchs_gridy.append(batch_gridy)
         batchs_gridx_2.append(batch_gridx_2)
         batchs_gridy_2.append(batch_gridy_2)
-    print('must match')
-    print(len(batch_gridx))
-    print(len(batchesA))
-    print(len(batchesB))
-    print('----------')
+    #print('must match')
+    #print(len(batch_gridx))
+    #print(len(batchesA))
+    #print(len(batchesB))
+    #print('----------')
     results = []
 
 
@@ -391,9 +391,9 @@ def run_intervisibility_in_batches( layerA,
                 "TARGET_HEIGHT": obs_h_1,
                 "OUTPUT": QgsProcessing.TEMPORARY_OUTPUT
             })['OUTPUT']
-        print('Batch number : '+str(i))
-        print('Human point length : '+ str(human_view.featureCount()))
-        print('Animal point length : '+ str(ani_view.featureCount()))
+        #print('Batch number : '+str(i))
+        #print('Human point length : '+ str(human_view.featureCount()))
+        #print('Animal point length : '+ str(ani_view.featureCount()))
 
         try:
             visibility_net = processing.run("visibility:intervisibility", {
@@ -403,12 +403,12 @@ def run_intervisibility_in_batches( layerA,
                     "DEM": DEM_path,
                     "OUTPUT": QgsProcessing.TEMPORARY_OUTPUT
                 })['OUTPUT']
-            print('itervis count : '+ str(visibility_net.featureCount()))
+            #print('itervis count : '+ str(visibility_net.featureCount()))
         except Exception as e:
             print(f"Inside the loop an error occurred: {e}")
         
         count = visibility_net.featureCount()
-        print('intervis count' + str(count))
+        #print('intervis count' + str(count))
                 
         features = visibility_net.getFeatures()
         type(features)
@@ -428,20 +428,20 @@ def run_intervisibility_in_batches( layerA,
                 lst2.append(True)
             else:
                 lst2.append(False)
-        print(len(lst))
-        print(len(lst2))
+        #print(len(lst))
+        #print(len(lst2))
                 
         sorted_truefalse = [None] * len(lst2)
-        print('about to create sorted')
+        #print('about to create sorted')
         for i_t_f, val in enumerate(lst):            
             sorted_truefalse[val] = lst2[i_t_f]
-        print('created sorted')
+        #print('created sorted')
             
-        print('about to zip results')
-        print(len(batchs_gridx))
-        print(len(batchs_gridx[i]))
+        #print('about to zip results')
+        #print(len(batchs_gridx))
+        #print(len(batchs_gridx[i]))
         result = list(zip(batchs_gridx[i],batchs_gridy[i],batchs_gridx_2[i],batchs_gridy_2[i], sorted_truefalse))
-        print('zipped results')
+        #print('zipped results')
 
                 
         conn = psycopg2.connect(database=db, user='postgres')
@@ -464,7 +464,7 @@ def run_intervisibility_in_batches( layerA,
                             )
                     """,result)
                 
-        print('here 11')
+        #print('here 11')
 
         conn.commit()
         curs.close()
@@ -589,7 +589,7 @@ def viss(encounter_event_table,
     """
 
     # Execute the query
-    print(query)
+    #print(query)
     curs.execute(query)
     print('query ran : ')
     # Create the vector layer (memory layer in EPSG:2154)
@@ -667,7 +667,7 @@ def viss(encounter_event_table,
     obs_h_1 = height_animal
     obs_h_2 = height_human
     rad = max_dist+100
-    print('About to run intervisibility with rad = ' + str(rad))
+    #print('About to run intervisibility with rad = ' + str(rad))
 
     try:
         visibility_net = run_intervisibility_in_batches(layer, 
@@ -709,8 +709,8 @@ elif run_all is True:
     viss(   encounter_event_table = 'exp__encounter_event_default',
             height_animal         = 1,
             height_human          = 1.6,
-            vis_column            = 'vis_grid',
             db = db,
+            vis_column            = 'vis_grid',
             batch_size =batch_size)
     print("---For default: %s seconds ---" % (time.time() - start_time_de))
     
@@ -718,8 +718,8 @@ elif run_all is True:
     viss(   encounter_event_table = 'exp__encounter_event_hda_500',
             height_animal         = 1,
             height_human          = 1.6,
-            vis_column            = 'vis_grid',
             db = db,
+            vis_column            = 'vis_grid',
             batch_size =batch_size)
     print("---For HDA_radius = 500: %s seconds ---" % (time.time() - start_time_500))
     
@@ -727,8 +727,8 @@ elif run_all is True:
     viss(   encounter_event_table = 'exp__encounter_event_d_gap_h_none',
             height_animal         = 1,
             height_human          = 1.6,
-            vis_column            = 'vis_grid',
             db = db,
+            vis_column            = 'vis_grid',
             batch_size =batch_size)
     print("---For d_gap_h = None: %s seconds ---" % (time.time() - start_time_d_gap_h))
     
@@ -736,8 +736,8 @@ elif run_all is True:
     viss(   encounter_event_table = 'exp__encounter_event_d_gap_a_none',
             height_animal         = 1,
             height_human          = 1.6,
-            vis_column            = 'vis_grid',
             db = db,
+            vis_column            = 'vis_grid',
             batch_size =batch_size)
     print("---For d_gap_a = None: %s seconds ---" % (time.time() - start_time_d_gap_a))
     
@@ -745,8 +745,8 @@ elif run_all is True:
     viss(   encounter_event_table = 'exp__encounter_event_default',
             height_animal        = 0.8,
             height_human          = 1.6,
-            vis_column            = 'vis_grid_chamois_8_dm',
             db = db,
+            vis_column            = 'vis_grid_chamois_8_dm',
             batch_size =batch_size)
     print("---For Chamois height = 0.8 m: %s seconds ---" % (time.time() - start_time_vis_grid_chamois_8_dm))
     
@@ -754,8 +754,8 @@ elif run_all is True:
     viss(   encounter_event_table = 'exp__encounter_event_default',
             height_animal         = 1.2,
             height_human          = 1.6,
-            vis_column            = 'vis_grid_chamois_12_dm',
             db                    = db,
+            vis_column            = 'vis_grid_chamois_12_dm',
             batch_size            = batch_size)
     print("---For Chamois height = 1.2 m: %s seconds ---" % (time.time() - start_time_vis_grid_chamois_12_dm))
     
@@ -763,8 +763,9 @@ elif run_all is True:
     viss(   encounter_event_table = 'exp__encounter_event_default',
             height_animal         = 1,
             height_human          = 2,
-            vis_column            = 'vis_grid_human_2_m',
             db                    = db,
+            vis_column            = 'vis_grid_human_2_m',
             batch_size            = batch_size)
     print("---For Human height = 2 m: %s seconds ---" % (time.time() - start_time_vis_grid_human_2_m))
     
+       
