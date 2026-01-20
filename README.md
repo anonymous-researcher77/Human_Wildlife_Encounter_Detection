@@ -116,6 +116,16 @@ After selecting a method, click on the green arrow to run the code.
 
 <img width="1907" height="1028" alt="QGIS_4" src="https://github.com/user-attachments/assets/7bcc65e4-d6ac-4cf9-9a78-802a433d0738" />
 
+
+Expected run times 
+- For default: 89.93287301063538 seconds
+- For HDA_radius = 500: 208.41560578346252 seconds
+- For d_gap_h = None: 1505.7864408493042 seconds
+- For d_gap_a = None: 121.2770733833313 seconds
+- For Chamois height 0.8 m: = 0.8 m 50.94901132583618 seconds
+- For Chamois height = 1.2 m: = 0.8 m 52.6498806476593 seconds
+- For Chamois height 1.2 m: = 0.8 m 53.93547582626343 seconds
+
 # Create Encounters
 
 After Intervisibility has been added for all encounter events tables encounters can be calculated by using the '3_main_Create_Encounters.py' file. '3_main_Create_Encounters.py' has the same 4 lines as '1_main_Create_Encounter_Events.py'.
