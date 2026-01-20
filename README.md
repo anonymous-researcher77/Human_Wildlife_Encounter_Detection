@@ -117,7 +117,7 @@ After selecting a method, click on the green arrow to run the code.
 <img width="1907" height="1028" alt="QGIS_4" src="https://github.com/user-attachments/assets/7bcc65e4-d6ac-4cf9-9a78-802a433d0738" />
 
 
-Expected run times 
+Expected run times (Total run time: 25 min)
 - For default: 3.4 min
 - For HDA_radius = 500: 11 min
 - For d_gap_h = None: 57 seconds
