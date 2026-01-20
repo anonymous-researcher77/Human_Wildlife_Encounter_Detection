@@ -118,13 +118,13 @@ After selecting a method, click on the green arrow to run the code.
 
 
 Expected run times 
-- For default: 89.93287301063538 seconds
-- For HDA_radius = 500: 208.41560578346252 seconds
-- For d_gap_h = None: 1505.7864408493042 seconds
-- For d_gap_a = None: 121.2770733833313 seconds
-- For Chamois height 0.8 m: = 0.8 m 50.94901132583618 seconds
-- For Chamois height = 1.2 m: = 0.8 m 52.6498806476593 seconds
-- For Chamois height 1.2 m: = 0.8 m 53.93547582626343 seconds
+- For default: 3.4 min
+- For HDA_radius = 500: 11 min
+- For d_gap_h = None: 57 seconds
+- For d_gap_a = None: 68 seconds
+- For Chamois height 0.8 m: 3.6 min
+- For Chamois height = 1.2 m: 4 min
+- For Chamois height 1.2 m: 4.2 min
 
 # Create Encounters
 
