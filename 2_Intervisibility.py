@@ -706,66 +706,65 @@ if run_all is False:
 elif run_all is True:
   
     start_time_de = time.time()
-    viss(   encounter_event_table = 'exp_encounter_event_default',
+    viss(   encounter_event_table = 'exp__encounter_event_default',
             height_animal         = 1,
             height_human          = 1.6,
             vis_column            = 'vis_grid',
             db = db,
             batch_size =batch_size)
-    print("---For default %s seconds ---" % (time.time() - start_time_de))
+    print("---For default: %s seconds ---" % (time.time() - start_time_de))
     
     start_time_500 = time.time()
-    viss(   encounter_event_table = 'exp_encounter_event_hda_500',
+    viss(   encounter_event_table = 'exp__encounter_event_hda_500',
             height_animal         = 1,
             height_human          = 1.6,
             vis_column            = 'vis_grid',
             db = db,
             batch_size =batch_size)
-    print("---For HDA_radius = 500 %s seconds ---" % (time.time() - start_time_500))
+    print("---For HDA_radius = 500: %s seconds ---" % (time.time() - start_time_500))
     
     start_time_d_gap_h = time.time()
-    viss(   encounter_event_table = 'exp_encounter_event_d_gap_h_none',
+    viss(   encounter_event_table = 'exp__encounter_event_d_gap_h_none',
             height_animal         = 1,
             height_human          = 1.6,
             vis_column            = 'vis_grid',
             db = db,
             batch_size =batch_size)
-    print("---For d_gap_h = None %s seconds ---" % (time.time() - start_time_d_gap_h))
+    print("---For d_gap_h = None: %s seconds ---" % (time.time() - start_time_d_gap_h))
     
     start_time_d_gap_a = time.time()
-    viss(   encounter_event_table = 'exp_encounter_event_d_gap_a_none',
+    viss(   encounter_event_table = 'exp__encounter_event_d_gap_a_none',
             height_animal         = 1,
             height_human          = 1.6,
             vis_column            = 'vis_grid',
             db = db,
             batch_size =batch_size)
-    print("---For d_gap_a = None %s seconds ---" % (time.time() - start_time_d_gap_a))
+    print("---For d_gap_a = None: %s seconds ---" % (time.time() - start_time_d_gap_a))
     
     start_time_vis_grid_chamois_8_dm = time.time()
-    viss(   encounter_event_table = 'exp_encounter_event_default',
+    viss(   encounter_event_table = 'exp__encounter_event_default',
             height_animal        = 0.8,
             height_human          = 1.6,
             vis_column            = 'vis_grid_chamois_8_dm',
             db = db,
             batch_size =batch_size)
-    print("---For Chamois height 0.8 m = 0.8 m %s seconds ---" % (time.time() - start_time_vis_grid_chamois_8_dm))
+    print("---For Chamois height = 0.8 m: %s seconds ---" % (time.time() - start_time_vis_grid_chamois_8_dm))
     
     start_time_vis_grid_chamois_12_dm = time.time()
-    viss(   encounter_event_table = 'exp_encounter_event_default',
-            height_animal         = 0.8,
+    viss(   encounter_event_table = 'exp__encounter_event_default',
+            height_animal         = 1.2,
             height_human          = 1.6,
             vis_column            = 'vis_grid_chamois_12_dm',
             db                    = db,
             batch_size            = batch_size)
-    print("---For Chamois height = 1.2 m = 0.8 m %s seconds ---" % (time.time() - start_time_vis_grid_chamois_12_dm))
+    print("---For Chamois height = 1.2 m: %s seconds ---" % (time.time() - start_time_vis_grid_chamois_12_dm))
     
     start_time_vis_grid_human_2_m = time.time()
-    viss(   encounter_event_table = 'exp_encounter_event_default',
+    viss(   encounter_event_table = 'exp__encounter_event_default',
             height_animal         = 1,
             height_human          = 2,
             vis_column            = 'vis_grid_human_2_m',
             db                    = db,
             batch_size            = batch_size)
-    print("---For Chamois height 1.2 m = 0.8 m %s seconds ---" % (time.time() - start_time_vis_grid_human_2_m))
+    print("---For Human height = 2 m: %s seconds ---" % (time.time() - start_time_vis_grid_human_2_m))
     
-       
