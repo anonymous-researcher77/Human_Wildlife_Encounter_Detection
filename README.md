@@ -90,9 +90,11 @@ Then if you click 'Run Below', it will create the Encounter Events tables for ea
 
 The total expected run time is ____
 + Default: Create Encounter Events --- 50 min
-+ HDA = 500: Create Encounter Events
-+ d_gap_a = 999999999: Create Encounter Events
-+ d_gap_h = 999999999: Create Encounter Events
++ HDA = 500: Create Encounter Events --- 66 min
++ d_gap_a = 999999999: Create Encounter Events --- 17 min
++ d_gap_h = 999999999: Create Encounter Events --- 15 min
+
+<img width="1203" height="1011" alt="image" src="https://github.com/user-attachments/assets/a20d5a4c-41bf-4e6e-a32b-cb54d0c75b0b" />
 
 
 # Run Intervisibility
