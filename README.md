@@ -139,7 +139,7 @@ After Intervisibility has been added for all encounter events tables encounters 
 
 After updating the required lines the click 'run below' at the top cell this will execute all cells creating encounter events of all settings used in the paper.
 
-Expected total run time is ____
+Expected total run time is **133 min (2.2 hours)**
 - default settings:  **7 min**
 - HDA = 500: **30 min**
 - d_gap_h = None: **6 min**
