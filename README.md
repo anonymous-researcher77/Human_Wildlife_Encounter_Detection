@@ -88,7 +88,7 @@ Then if you click 'Run Below', it will create the Encounter Events tables for ea
 
 <img width="1922" height="1008" alt="encounter_events_111" src="https://github.com/user-attachments/assets/c8fc38ff-a4a7-4b5a-b98c-3dc792b4840b" />
 
-The total expected run time is ____
+The total expected run time is 150 min (2.5 hours)
 + Default: Create Encounter Events --- 50 min
 + HDA = 500: Create Encounter Events --- 66 min
 + d_gap_a = 999999999: Create Encounter Events --- 17 min
@@ -140,21 +140,21 @@ After Intervisibility has been added for all encounter events tables encounters 
 After updating the required lines the click 'run below' at the top cell this will execute all cells creating encounter events of all settings used in the paper.
 
 Expected total run time is ____
-- default settings
-- HDA = 500
-- d_gap_h = None
-- d_gap_a = None
-- t_gap = 2 min
-- t_gap = 4 min
-- t_gap = 16 min
-- t_gap = 2 hours
-- t_gap = 4 hours
-- t_gap = 24 hours
-- height_chamois = 0.8 m
-- height_chamois = 1.2 m
-- height_human = 2 m
-- Ignoring intervisibility
-- Ignoring intervisibility hda = 500
+- default settings:  **7 min**
+- HDA = 500: **30 min**
+- d_gap_h = None: **6 min**
+- d_gap_a = None: **7 min**
+- t_gap = 2 min: **5 min**
+- t_gap = 4 min: **5.5 min**
+- t_gap = 16 min: **5.5 min**
+- t_gap = 2 hours: **5 min**
+- t_gap = 4 hours: **5.5 min**
+- t_gap = 24 hours: **5.5 min**
+- height_chamois = 0.8 m: **2.5 min**
+- height_chamois = 1.2 m: **2.6 min**
+- height_human = 2 m: **2.6 min**
+- Ignoring intervisibility: **8.5 min**
+- Ignoring intervisibility hda = 500: **35 min**
 
 # Run Figures
 
