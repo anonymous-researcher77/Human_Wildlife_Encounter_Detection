@@ -160,13 +160,13 @@ Expected total run time is **133 min (2.2 hours)**
 
 After creating the encounter tables to recreate the results from the paper figures can be created by running the various figure python folders. Only figures that include results or data are included here. Diagram figures that do not use data are not included.
 
-**Figure_8_data_map.py:**  75 seconds
+**Figure_8_data_map.py**  75 seconds
 
 This file only requires that the database path is accurate i.e. the following are accurate
 - db = 'ResRoute'
 - db_connection_url =
     
-**Figure_9_Depiction_of_ECA.py**
+**Figure_9_Depiction_of_ECA.py** 36 seconds
 
 This file only requires that the database path is accurate i.e. the following are accurate
 - db = 'ResRoute'
