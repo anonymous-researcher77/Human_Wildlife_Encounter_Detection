@@ -172,7 +172,7 @@ This file only requires that the database path is accurate i.e. the following ar
 - db = 'ResRoute'
 - db_connection_url =
     
-**Figure_10_histogram_by_distance.py**
+**Figure_10_histogram_by_distance.py** 20 seconds
 
 This file only requires that the database path is accurate i.e. the following are accurate
 - db = 'ResRoute'
