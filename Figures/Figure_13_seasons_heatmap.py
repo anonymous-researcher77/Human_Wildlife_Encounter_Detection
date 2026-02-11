@@ -139,7 +139,7 @@ for i, season in enumerate(seasons):
     # Plot the raster with colormap
     masked = np.ma.masked_where(raster == 0, raster)
     cmap = plt.cm.RdBu_r
-    img = ax.imshow(masked, cmap=cmap, extent=bounds, origin='upper', zorder=15, vmin=1, vmax=255)  # Set colorbar range
+    img = ax.imshow(masked, cmap=cmap, extent=bounds, origin='upper', zorder=15, vmin=1, vmax=1000)  # Set colorbar range
 
     # Plot additional elements
     bauges.plot(ax=ax, facecolor='green', alpha=1, zorder=0)
@@ -164,7 +164,7 @@ for i, season in enumerate(seasons):
 cbar_ax = fig.add_subplot(gs[1, :])  # This is the bottom row that spans all columns
 cbar = fig.colorbar(img, cax=cbar_ax, orientation='horizontal')
 cbar.set_label('Number of overlapping $ECA^a$ from distinct human trajectory and recorded animal pairs')
-cbar.set_ticks([1, 50, 100, 150, 200, 250])  # Optional: Set ticks for better readability
+cbar.set_ticks([1, 250, 500, 750, 1000])  # Optional: Set ticks for better readability
 
 
 ax4.legend(handles=legend_elements, loc='upper right')
