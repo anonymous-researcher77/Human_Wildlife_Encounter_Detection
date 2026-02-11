@@ -9,3 +9,4 @@ ortega
 contextily
 sqlalchemy
 geopandas
+affine
