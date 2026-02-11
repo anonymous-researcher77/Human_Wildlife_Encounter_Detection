@@ -10,3 +10,5 @@ contextily
 sqlalchemy
 geopandas
 affine
+scipy
+contextily
