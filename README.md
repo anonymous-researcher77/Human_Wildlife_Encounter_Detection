@@ -178,20 +178,21 @@ This file only requires that the database path is accurate i.e. the following ar
 - db = 'ResRoute'
 - db_connection_url =
   
-**Figure_11_histogram_by_time_of_day.py**
+**Figure_11_histogram_by_time_of_day.py** 9 seconds
 
 This file requires that the following are updated
 - file path to tracklib
 - db = 'ResRoute'
 - db_connection_url =
 
-**Figure_12_kernel_density_estimate.py**
+**Figure_12_kernel_density_estimate.py** 20 seconds
 
 This file requires that the following are updated if they do not match the defaults
 - db = 'ResRoute'
 - db_user = 'postgres'
   
-**Figure_13_seasons_heatmap.py** 2 min
+**Figure_13_seasons_heatmap.py** 2 minutes
+
 Note that this figure in the original submission, had a error in the code which has been updated to create the correct figure. The corrected figure will be used in the final. The heat map had an overflow error that if the value passed 255 would lead to the value resetting. As such 256 => 1; 510=>255; 511=>1 ext.
 
 The original figure was this below
@@ -209,28 +210,28 @@ This file requires the following to be update
   
 # Run Tables
 
-**Table_2_chamois_data.py**
+**Table_2_chamois_data.py** 3 seconds
 
 This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 - db_password =  'postgres'
 
-**Table_3_human_data.py**
+**Table_3_human_data.py** 2 seconds 
 
 This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 - db_password =  'postgres'
 
-**Table_5_HDA_radius_and_Intervisibility.py**
+**Table_5_HDA_radius_and_Intervisibility.py** 9 seconds
 
 This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 - db_password =  'postgres'
 
-**Table_6_parameters.py**
+**Table_6_parameters.py** 45 seconds
 
 This file requires the following to be update
 - db          =  'ResRoute'
@@ -247,7 +248,7 @@ This file requires the following to be update
 - db          =  'ResRoute'
 - db_user     =  'postgres'
 
-**Table_8_trajectories_seasons.py**
+**Table_8_trajectories_seasons.py** 3 seconds
 
 - db          =  'ResRoute'
 - db_user     =  'postgres'
