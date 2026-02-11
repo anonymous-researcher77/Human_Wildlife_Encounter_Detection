@@ -191,7 +191,7 @@ This file requires that the following are updated if they do not match the defau
 - db = 'ResRoute'
 - db_user = 'postgres'
   
-**Figure_13_seasons_heatmap.py**
+**Figure_13_seasons_heatmap.py** 2 min
 Note that this figure in the original submission, had a error in the code which has been updated to create the correct figure. The corrected figure will be used in the final. The heat map had an overflow error that if the value passed 255 would lead to the value resetting. As such 256 => 1; 510=>255; 511=>1 ext.
 
 The original figure was this below
