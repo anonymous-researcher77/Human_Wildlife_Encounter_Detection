@@ -192,6 +192,15 @@ This file requires that the following are updated if they do not match the defau
 - db_user = 'postgres'
   
 **Figure_13_seasons_heatmap.py**
+Note that this figure in the original submission, had a error in the code which has been updated to create the correct figure. The corrected figure will be used in the final. The heat map had an overflow error that if the value passed 255 would lead to the value resetting. As such 256 => 1; 510=>255; 511=>1 ext.
+
+The original figure was this below
+
+<img width="1960" height="1143" alt="heat_map" src="https://github.com/user-attachments/assets/b2cffb9b-349d-4579-a37c-9844133ae73f" />
+
+While the updated figure that will be used in the in the final submission is as below and the current code should produce the second figure.
+
+<img width="1960" height="1134" alt="heatmap" src="https://github.com/user-attachments/assets/d5c9b0ce-2d14-40f7-9ceb-1ed993a0f91e" />
 
 This file requires the following to be update
 - folder_path =        r"ADD PATH TO TRACKLIB FOLDER"
