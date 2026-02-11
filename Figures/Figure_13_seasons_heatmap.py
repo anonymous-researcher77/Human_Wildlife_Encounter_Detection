@@ -90,7 +90,7 @@ for i, season in enumerate(seasons):
                            vis=True, 
                            r_p=r_p,
                            group_by=group_by, 
-                           db='ResRoute')
+                           db_connection_url=db_connection_url)
 
     # Set bounds for the raster
     if area == 'all':
@@ -128,7 +128,7 @@ for i, season in enumerate(seasons):
             [shape],
             out_shape=(height, width),
             transform=transform,
-            dtype=np.uint8  # <-- Ensures compatible dtype
+            dtype=np.uint32  # <-- Ensures this has been changed from 8 to 32 to fix th figure
         )
         raster += rasterized
     print(np.max(raster))
@@ -174,3 +174,5 @@ plt.subplots_adjust(hspace=0.2, wspace=0.3)  # Adjust horizontal and vertical sp
 
 plt.tight_layout()
 plt.show()
+
+# %%
