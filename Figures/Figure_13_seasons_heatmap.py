@@ -120,7 +120,7 @@ for i, season in enumerate(seasons):
     bbox = box(*bounds)
     ppa_clipped = ppa[ppa.geometry.intersects(bbox)].copy()
     shapes = [(geom, 1) for geom in ppa.geometry]
-    raster = np.zeros((height, width), dtype=np.uint8)
+    raster = np.zeros((height, width), dtype=np.uint32)
 
 
     for shape in shapes:
